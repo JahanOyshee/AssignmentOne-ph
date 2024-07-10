@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+        <style>
+            footer {
+            color: #000000;
+            padding: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+        footer a {
+
+            align-items: flex-end;
+            display: inline-block;
+            
+        }
+
+
+        .Banner {
+            background-image: url('Images/Hero-bg.png');
+            width: 100%;
+            height: 380px; 
+            background-size: cover;
+            background-position: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .content img {
+            max-width: 100px; 
+            margin-bottom: 20px; 
+        }
+        .content {
+            position: absolute;
+            color: #0d0428; 
+            font-family: "Wittgenstein", serif;
+        }
+        .button-container {
+            margin-top: 20px; 
+        }
+        .button-container a {
+            text-decoration: none; 
+        }
+        .button-container button {
+            padding: 8px 10px; 
+            font-size: 12px; 
+            background-color: hsl(211, 95%, 8%); 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+        .Why-Dev {
+            width: 100%;
+            height: 100px; 
+            background-color: hsl(0, 0%, 100%); 
+            color: #090220;
+            font-family: "Wittgenstein", serif; 
+            font-size: x-small;
+            text-align: center;
+            margin-top: 80px; 
+           
+            
+        }             
+        
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 5px; 
+        }
+        .text-section {
+            max-width: 50%; 
+        }
+        .text-section h1 {
+            font-size: medium; 
+            font-family: "Wittgenstein", serif; 
+            color: hsl(0, 1%, 23%);
+        }
+        .text-section p {
+            font-size: x-small; 
+            font-family: "Wittgenstein", serif; 
+            color: hsl(0, 1%, 23%);
+        }
+        .text-section button {
+            padding: 5px 10px; 
+            font-size: 12px; 
+            background-color: hsl(0, 0%, 100%);
+            color: #7a7878; 
+            border-style: solid;
+            border-color: #7a7878;
+            cursor: pointer; 
+        }
+        
+    
+        .image-section img {
+            max-width: 70%; 
+            height: auto; 
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 5px;
+        }
+        .container3 {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 5px; 
+        
+        }
+
+        .My-Insp {
+            width: 100%;
+            height: 200px; 
+            background-color: hsl(0, 0%, 100%); 
+            color: #090220; 
+            font-family: "Wittgenstein", serif; 
+            font-size: x-small;
+            text-align: center;
+            margin-top: 80px; 
+           }     
+        .My-Target {
+            width: 100%;
+            height: 100px; 
+            background-color: hsl(0, 0%, 100%); 
+            color: #090220; 
+            font-family: "Wittgenstein", serif; 
+            font-size: x-small;
+            text-align: center;
+            margin-top: 300px; 
+           }           
+           
+           
+        .card1 {
+            background-color: hwb(0 83% 1%);
+            width: 180px;
+            display: inline-block;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+           
+
+        }
+        .card2 {
+            background-color: hwb(219 68% 4%);
+            width: 180px;
+           display: inline-block;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            
+        }
+        .card3{
+            background-color: hwb(46 68% 4%);
+            width: 180px;
+            display: inline-block;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+           
+
+        }
+        .card1 img {
+            width: 25%;
+            height: 25%;
+            margin-block: 15px;
+            margin-left: 15px;
+            display: block;
+            
+        }
+        .card1-content {
+            padding: 20px;
+            text-align: left;
+            
+            
+        }
+        .card1-content h2 {
+            margin-top: 0;
+            font-family: "Wittgenstein", serif; 
+            font-size: medium;
+            
+        }
+        .card1-content p {
+            margin-bottom: 10px;
+            color: hsl(0, 2%, 36%);
+            font-family: "Wittgenstein", serif; 
+            font-size: smaller;
+        }
+        .card2 img {
+            width: 25%;
+            height: 25%;
+            margin-block: 15px;
+            margin-left: 15px;
+            display: block;
+            
+        }
+        .card2-content {
+            padding: 20px;
+            text-align: left;
+            
+            
+        }
+        .card2-content h2 {
+            margin-top: 0;
+            font-family: "Wittgenstein", serif; 
+            font-size: medium;
+        }
+        .card2-content p {
+            margin-bottom: 10px;
+            color: hsl(0, 2%, 36%);
+            font-family: "Wittgenstein", serif; 
+            font-size: smaller;
+        }
+        .card3 img {
+            width: 25%;
+            height: 25%;
+            margin-block: 15px;
+            margin-left: 15px;
+            display: block;
+            
+        }
+        .card3-content {
+            padding: 20px;
+            text-align: left;
+            
+            
+        }
+        .card3-content h2 {
+            margin-top: 0;
+            font-family: "Wittgenstein", serif; 
+            font-size: medium;
+        }
+        .card3-content p {
+            margin-bottom: 10px;
+            color: hsl(0, 2%, 36%);
+            font-family: "Wittgenstein", serif; 
+            font-size: smaller;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <footer>
+        <p>Rafat Jahan&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       
+        
+            <a href="https://www.facebook.com/rafatjahan.oyshee?mibextid=ZbWKwL">
+                <img src="Images/facebook.png" alt="W3Schools.com" width="30" height="30"></a>
+            <a href="https://github.com/JahanOyshee">
+                    <img src="Images/github.png" alt="W3Schools.com" width="30" height="30"></a>
+            <a href="https://www.linkedin.com/in/rafat-jahan-52b099230/">
+                        <img src="Images/linkedin-icon 1.png" alt="W3Schools.com" width="30" height="30"></a>
+           
+        </p>
+    </footer>
+    
+        <div  class="Banner">
+          
+            <div class="content">
+                <img src="Images/Group.png" alt="Group Image">
+                <h1>"In the near future, I hope to <br>
+                    become a Developer."</h1>
+                <p>I myself Rafat Jahan. I am a Computer Science student <br>and Pursuing a career as a software engineer.</p>
+                <div class="button-container">
+                    <a href="support.html">
+                        <button>Contact with me</button>
+                    </a>
+                </div>
+            </div>  
+         
+        </div>
+
+
+        <div class="Why-Dev">
+            <h1>Why Web Development??</h1> 
+            <p>I think web development is fun!!</p>
+           
+        </div>
+
+        <div class="container1">
+            <div class="text-section">
+                <h1>I will Do Coding and <br>
+                    Change The World</h1>
+                <p>I will do coding but i don't know if the world change or not :')</p>
+                <button onclick="window.location.href='Learn.html'">Learn More</button>
+            </div>
+            <div class="image-section">
+                <img src="Images/Layer_1.png" alt="Image">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="image-section">
+                <img src="Images/Group 3.png" alt="Image">
+            </div>
+            <div class="text-section">
+                <h1>I will help People by creating <br>
+                    Modern Web System</h1>
+                <p>I will try my best to do in-sha-allah!!</p>
+                <button onclick="window.location.href='Learn.html'">Learn More</button>
+            </div>
+            
+           
+        </div>
+        <div class="container3">
+            <div class="text-section">
+                <h1>I will Do Coding and <br>
+                    Change The World</h1>
+                <p>Same :')</p>
+                <button onclick="window.location.href='Learn.html'">Learn More</button>
+            </div>
+            <div class="image-section">
+                <img src="Images/Group 4.png" alt="Image">
+            </div>
+        </div>
+        <div class="My-Insp">
+            <h1>My Inspiration</h1> 
+            <p>This is one of my favorite talk that motivates me! </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY?si=E8-adgoeyr9vHlEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="My-Target">
+            <h1>My Current Target</h1> 
+            <p>These are my current targets - </p>
+            
+        </div>
+
+       
+        <div class="card1">
+        <img src="Images/html.png" alt="Placeholder Image">
+        <div class="card1-content">
+            <h2>HTML</h2>
+            <p>HTML is the standard markup language for creating Web pages.</p>
+            <a href="https://www.w3schools.com/html/html_intro.asp" style="font-size: xx-small; color: #000;" >Learn more</a>
+        </div>
+    </div> 
+    
+    
+    <div class="card2">
+        <img src="Images/css.png" alt="Placeholder Image">
+       
+        <div class="card2-content">
+            <h2>CSS</h2>
+            <p>CSS is the language that we use to style a Web page.</p>
+            <a href="https://www.w3schools.com/css/css_intro.asp" style="font-size: xx-small; color: #000;">Learn more</a>
+        </div>
+    </div>
+    
+
+    <div class="card3">
+        <img src="Images/js.png" alt="Placeholder Image">
+        
+        <div class="card3-content">
+            <h2>JavaScript</h2>
+            <p>JavaScript is a scripting language  to implement complex features.</p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" style="font-size: xx-small; color: #000;">Learn more</a>
+        </div>
+    
+   
+    
+ 
+</body>
+</html>
